@@ -584,65 +584,171 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .container {
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    
+    .hero-content {
+        padding: 0 15px;
+        max-width: 100%;
+        text-align: center;
+    }
+    
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
     }
     
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
     }
     
     .content-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 30px;
+        margin: 0;
     }
     
     .content-grid.reverse {
         direction: rtl;
     }
     
+    .text-content {
+        padding: 15px;
+    }
+    
     .section-title {
         font-size: 2rem;
+        text-align: center;
+    }
+    
+    .subsection-title {
+        font-size: 1.7rem;
+        text-align: center;
+        border-right: none;
+        border-bottom: 3px solid #ff6b6b;
+        padding-right: 0;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .description {
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 1.6;
+    }
+    
+    .content-image {
+        height: 280px;
     }
     
     .cost-breakdown {
         flex-direction: column;
         gap: 20px;
+        padding: 0 10px;
     }
     
     .cost-divider {
         transform: rotate(90deg);
+        font-size: 1.5rem;
+    }
+    
+    .cost-item, .cost-total {
+        margin: 0 auto;
+        max-width: 280px;
     }
     
     .cta-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
     
     .cta-button {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
+        text-align: center;
+    }
+    
+    .modal-content {
+        margin: 20% auto;
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .safety-features {
+        gap: 10px;
+    }
+    
+    .feature-item {
+        padding: 12px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
 }
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
     }
     
     .container {
-        padding: 0 15px;
+        padding: 0 10px;
     }
     
     section {
-        padding: 60px 0;
+        padding: 50px 0;
     }
     
     .subsection-title {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
     .description {
+        font-size: 1rem;
+    }
+    
+    .content-image {
+        height: 220px;
+    }
+    
+    .cost-amount {
+        font-size: 2rem;
+    }
+    
+    .total-amount {
+        font-size: 2.2rem;
+    }
+    
+    .cta-title {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    .cta-description {
         font-size: 1rem;
     }
 }
